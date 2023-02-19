@@ -8,16 +8,6 @@ public class Auto {
 	public Motor motor;
 	public static int cantidadCreados;
 	
-	public Auto(String modelo,int precio, Asiento[] asientos,String marca,Motor motor,int registro) {
-		this.modelo=modelo;
-		this.precio=precio;
-		this.asientos=asientos;
-		this.marca=marca;
-		this.motor=motor;
-		this.registro=registro;
-		
-	}
-	
 	public int cantidadAsientos() {
 		for(Asiento n: asientos) if(n instanceof Asiento && n!=null) ++cantidadCreados;
 		return cantidadCreados;
